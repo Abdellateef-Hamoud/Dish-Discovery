@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+.elementor-heading-subtitle {
+    text-align: center;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #F89223;
+    font-family: "Handlee",Sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.elementor-heading-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -.2px;
+}

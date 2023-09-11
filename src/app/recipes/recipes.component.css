@@ -1,0 +1,7 @@
+.element-type-background{
+    background-color: #F7F6F3;
+    background-image: url("../../assets/pattern-home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

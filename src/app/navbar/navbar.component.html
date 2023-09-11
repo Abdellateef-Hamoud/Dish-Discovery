@@ -1,0 +1,68 @@
+<div class="d-flex flex-column">
+    <div class="container-fluid bg-color">
+        <div class="d-flex py-2 justify-content-between">
+            <div class="d-flex gap-3">
+                <fa-icon [icon]="['fab', 'facebook']" class="brand-icon"></fa-icon>
+                <fa-icon [icon]="['fab', 'twitter']" class="brand-icon"></fa-icon>
+                <fa-icon [icon]="['fab', 'instagram']" class="brand-icon"></fa-icon>
+                <fa-icon [icon]="['fab', 'youtube']" class="brand-icon"></fa-icon>
+            </div>
+            <div class="d-flex gap-3">
+                <span>
+                    <fa-icon [icon]="['far', 'file-lines']" class="m-icon"></fa-icon>
+                    <a class="m-text">Submit Recipe</a>
+                </span>
+                <span>
+                    <fa-icon [icon]="['far', 'heart']" class="m-icon"></fa-icon>
+                    <a class="m-text">Saved Recipes</a>
+                </span>
+                <span>
+                    <fa-icon [icon]="['fas', 'lock']" class="m-icon"></fa-icon>
+                    <a class="m-text">Login</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-row align-items-center justify-content-center">
+        <div class="d-flex justify-content-center align-items-center py-4">
+            <div>
+                <img class="img img-fluid" src="assets/logo.png" alt="logo">
+            </div>
+            <span class="ms-2 mt-3">
+                <strong class="logo-text">Dish Discovery</strong>
+                <small class="text-muted logo-desc">Cooking Recipes</small>
+            </span>
+        </div>
+    </div>
+    <div class="container-fluid border-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link active" routerLink="/home" ><span>Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/browse recipes"><span>Browse Recipes</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/about"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/contact us" ><span>Contact Us</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+                        <!-- [(ngmodel)]="searchvalue" -->
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <app-slider></app-slider>
+</div>
