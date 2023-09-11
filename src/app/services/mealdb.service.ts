@@ -9,6 +9,7 @@ import { Category } from '../models/category';
 })
 export class MealdbService {
 
+
   apiBaseUrl: string = "https://www.themealdb.com/api/json/v1/1";
 
   constructor(private http: HttpClient) { }
@@ -22,4 +23,9 @@ export class MealdbService {
   getAllMealsByCategory(category: Category): Observable<any> {
     return this.http.get(`${this.apiBaseUrl}/filter.php?c=${category.strCategory}`);
   }
+
+  getRecipeDetails(selectedRecipeId: string | null) : Observable<any> {
+    return this.http.get(`${this.apiBaseUrl}/lookup.php?i=${selectedRecipeId}`);
+  }
 }
+

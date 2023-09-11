@@ -27,9 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { RecipedetailsComponent } from './recipedetails/recipedetails.component';
 
 @NgModule({
   declarations: [
@@ -41,9 +41,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     RecipesComponent,
     FooterComponent,
     NotFoundComponent,
-    ContactusComponent,
     AboutusComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    RecipedetailsComponent
   ],
   imports: [
     BrowserModule,

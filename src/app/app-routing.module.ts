@@ -6,13 +6,16 @@ import { RecipesComponent } from './recipes/recipes.component';
 
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { RecipedetailsComponent } from './recipedetails/recipedetails.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'', component:HomeComponent},
   {path:'browse recipes', component:RecipesComponent},
   {path:'about', component:AboutusComponent},
-  // {path:'contact us', component:ContactusComponent},
+  {path:'contact us', component:ContactUsComponent},
+  {path:'reciedetails/:id', component:RecipedetailsComponent},
  
   {path:'**', component:NotFoundComponent},
   

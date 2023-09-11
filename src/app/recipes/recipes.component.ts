@@ -3,6 +3,7 @@ import { MealdbService } from '../services/mealdb.service';
 import { CategoryMeal } from '../models/category-meal';
 import { Category } from '../models/category';
 import { forkJoin } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -16,7 +17,7 @@ export class RecipesComponent implements OnInit {
   currentPage: number = 1; // Current page number
   itemsPerPage: number = 8; // Number of items to display per page
 
-  constructor(private mealdbService: MealdbService) {
+  constructor(private mealdbService: MealdbService, private router : Router) {
 
   }
 
@@ -68,6 +69,10 @@ export class RecipesComponent implements OnInit {
     if (this.currentPage > 1) {
       this.currentPage--;
     }
+  }
+
+  showIngredients(recpieId: string){
+    this.router.navigate([`/reciedetails/${recpieId}`])
   }
 
 }

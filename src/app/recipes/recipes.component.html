@@ -11,13 +11,15 @@
         <div class="d-flex flex-wrap justify-content-around">
             <div *ngFor="let meal of meals.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)"
                 class="card my-2" style="width: 18rem;">
+               
                 <img [src]="meal.strMealThumb" class="card-img-top img-fluid" alt="">
+             
                 <div class="card-body">
                     <div class="mb-5">
                         <h5 class="card-title fs-5 fw-bold">{{meal.strMeal}}</h5>
                     </div>
                     <div class="d-flex flex-column gap-2 justify-content-end mb-0">
-                        <button class="btn btn-outline-info btn-sm" type="button">Show Ingredients</button>
+                        <button class="btn btn-outline-info btn-sm" type="button" (click)="showIngredients(meal.idMeal)">Show Ingredients</button>
                         <button class="btn btn-outline-success btn-sm" type="button">Save Recipe</button>
                     </div>
                 </div>
